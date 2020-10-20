@@ -136,7 +136,7 @@ header i {
 }
 
 .hero {
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
 }
 
@@ -626,6 +626,23 @@ img {
 
 /* contact page */
 
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+.icons a {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+  color: #0e76a8;
+}
+
+.github-icon {
+  color: #211F1F !important;
+}
+
+
 .two-column {
   display: flex;
   flex-direction: column;
@@ -760,10 +777,6 @@ img {
 /* media queries */
 
 @media (min-width: 640px) {
-  header {
-    max-width: 640px;
-  }
-
   .kevin {
     font-size: 3rem;
   }
@@ -827,10 +840,6 @@ img {
 }
 
 @media (min-width: 768px) {
-  header {
-    max-width: 768px;
-  }
-
   .testimonial {
     border-radius: 0;
     --transform-translate-x: -8rem;
@@ -900,7 +909,7 @@ img {
 
   .two-column {
     flex-direction: row;
-    padding-top: 6rem;
+    padding-top: 0;
     padding-bottom: 6rem;
   }
 
@@ -957,11 +966,13 @@ img {
     text-align: center;
     width: 100%;
     visibility: hidden;
+    padding: 0;
   }
 
   .nav-links a {
     display: block;
     border-bottom: 1px solid #EAEAEB;
+
   }
 
   .nav-links.show {
@@ -981,6 +992,7 @@ img {
   /* Adding a transition delay to the items in the navigation menu */
   .nav-item:nth-child(1) {
     transition-delay: 0.1s;
+    text-align: center;
   }
 
   .nav-item:nth-child(2) {
@@ -997,12 +1009,9 @@ img {
 }
 
 @media (min-width: 1024px) {
-  header {
-    max-width: 1024px;
-  }
 
   .hero {
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 6rem;
   }
 
