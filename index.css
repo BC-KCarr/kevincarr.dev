@@ -1,0 +1,1120 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e2e8f0;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 0;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.outside-container {
+  font-family: Inter, system-ui;
+  color: #243E63;
+  padding: 2rem;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+strong {
+  color: black
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header i {
+  color: #4F9EF3;
+}
+
+.nav {
+  border-bottom: 1px solid #EAEAEB;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+
+/* Styling the three lines to make it an X */
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: black;
+  transition: all 0.5s ease-out;
+}
+
+.nav-links a {
+  clear: right;
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 70px;
+  margin-left: 3rem !important;
+  color: inherit;
+  text-decoration: inherit;
+  font-size: 0.9rem;
+  margin-right: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 70px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition-duration: 300ms;
+  padding-bottom: 0.25rem;
+  border-bottom-width: 2px;
+  border-color: transparent;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
+.nav-links span {
+  border-color: transparent;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.25rem;
+  background-color: #4F9EF3;
+  color: #f7fafc;
+  border-bottom-width: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-btn {
+  visibility: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.hero {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-column {
+  margin-right: auto;
+  max-width: 32rem;
+}
+
+.kevin {
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  text-align: left;
+  color: #4F9EF3;
+  line-height: 1.375;
+}
+
+.mission-statement {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.625;
+  margin-top: 1rem;
+  color: #4a5568;
+  max-width: 32rem;
+}
+
+.image-column {
+  position: relative;
+  margin-top: 4rem;
+  margin-left: auto;
+}
+
+.image-container {
+  position: relative;
+  z-index: 40;
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+}
+
+img {
+  display: block;
+  height: auto;
+  border-style: solid;
+}
+
+.page-title {
+  float: left;
+  font-weight: 300;
+  border-bottom-width: 0;
+  font-size: 1rem !important;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.my-picture {
+  max-width: 100%;
+  width: 24rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  position: relative;
+  z-index: 20;
+}
+
+.testimonial {
+  max-width: 24rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #4F9EF3;
+  color: #cbd5e0;
+  font-weight: 500;
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  font-size: 0.875rem;
+  line-height: 1.625;
+}
+
+.quotes-svg {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f7fafc;
+  --transform-translate-x: 0.25rem;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  opacity: 0.1;
+}
+
+.dot-pattern {
+  pointer-events: none;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  --transform-translate-x: 2.5rem;
+  --transform-translate-y: 2.5rem;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  height: 8rem;
+  width: 8rem;
+  opacity: 0.25;
+  color: #1a202c;
+  fill: currentColor;
+}
+
+.offsetbackground {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #e2e8f0;
+  border-radius: 0.25rem;
+}
+
+/* skills section */
+
+.skills-outside-container {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #4F9EF3;
+  color: #f7fafc;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.content-padding-xl {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.heading-container {
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  text-align: center;
+  color: #243E63;
+}
+
+.heading-skills {
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  text-align: center;
+}
+
+.skills {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+/* projects section */
+
+.container {
+  position: relative;
+}
+
+.single-column {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2.25rem;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  text-align: center;
+  font-family: Inter, system-ui;
+}
+
+.content {
+  margin-top: 4rem;
+}
+
+.savethisjob {
+  margin-top: 6rem;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.saveThisJobImg {
+  background-image: url('/images/savethisjob2.png');
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+  height: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.details {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.subtitle {
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #7c8ba1;
+  margin: 0
+}
+
+.project-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0;
+}
+
+.description {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+
+.contributions li {
+  margin-bottom: 1rem;
+}
+
+.aboutDescription {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.625;
+  color: #7c8ba1;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.git-hub-link {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+  color: #0369D7;
+  font-weight: 700;
+  cursor: pointer;
+  transition-duration: 300ms;
+  border-bottom-width: 2px;
+  border-color: transparent;
+}
+
+.gameoflife {
+  margin-top: 6rem;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.gameOfLifeImg {
+  background-image: url('images/gameoflife.png');
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+  height: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.nasapotd {
+  margin-top: 6rem;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.nasapotdImg {
+  background-image: url('images/nasapotd.png');
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+  height: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.content-padding-xl {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* footer section */
+.footer-container-about {
+  position: relative;
+  background-color: #1a202c;
+  color: #f7fafc;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-bottom: -2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container-contact {
+  position: relative;
+  background-color: #1a202c;
+  color: #f7fafc;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-bottom: -2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  position: relative;
+  background-color: #1a202c;
+  color: #f7fafc;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-bottom: -2rem;
+}
+
+.footer-content {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.footer-row {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footer-header-container {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.header-text {
+  letter-spacing: 0.05em;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.footer-links-container {
+  margin-top: 2rem;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.footer-links-container a {
+  border-bottom-width: 2px;
+  border-color: transparent;
+  padding-bottom: 0.25rem;
+  transition-duration: 300ms;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: inherit;
+  text-decoration: inherit;
+  background-color: transparent;
+}
+
+.social-links-container {
+  margin-top: 2.5rem;
+}
+
+.social-links-container a {
+  cursor: pointer;
+  display: inline-block;
+  color: #f7fafc;
+  transition-duration: 300ms;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.social-links-container svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+/* contact page */
+
+.two-column {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.image-column-contact {
+  width: 100%;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  flex-shrink: 0;
+  height: 20rem;
+}
+
+.bg-image {
+  background-image: url("images/email-illustration.svg");
+  border-radius: 0.25rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.text-column-contact {
+  width: 100%;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+.subHeading {
+  text-align: center;
+}
+
+.subHeading h5 {
+  font-weight: 700;
+  color: #4F9EF3;
+  text-align: center;
+}
+
+.heading-contact {
+  letter-spacing: 0.025em;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 1.25;
+}
+
+.heading-contact span {
+  color: #4F9EF3;
+}
+
+.description-contact {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.625;
+  color: #7c8ba1;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form-name {
+  margin-top: 1.5rem;
+  border-bottom-width: 2px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 300ms;
+}
+
+.contact-form-name:first-child {
+  margin-top: 0;
+}
+
+.contact-form-email {
+  margin-top: 1.5rem;
+  border-bottom-width: 2px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 300ms;
+}
+
+.contact-form-message {
+  margin-top: 1.5rem;
+  border-bottom-width: 2px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+  transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+  transition-duration: 300ms;
+  height: 6rem;
+}
+
+.submit-btn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  background-color: #4F9EF3;
+  color: #f7fafc;
+  transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+  transition-duration: 300ms;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+/* media queries */
+
+@media (min-width: 640px) {
+  header {
+    max-width: 640px;
+  }
+
+  .kevin {
+    font-size: 3rem;
+  }
+
+  .my-picture {
+    border-radius: 0.25rem
+  }
+
+  .row {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .testimonial {
+    position: absolute;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .skills {
+    flex-direction: row;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .saveThisJobImg {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .details {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .gameOfLifeImg {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .nasapotdImg {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .footer-links-container {
+    flex-direction: row;
+  }
+
+  .heading-contact {
+    font: 2.25rem;
+  }
+
+  .heading-contact {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    max-width: 768px;
+  }
+
+  .testimonial {
+    border-radius: 0;
+    --transform-translate-x: -8rem;
+    margin-right: -4rem;
+  }
+
+  .mission-statement {
+    font-size: 1rem;
+  }
+
+  .quotes-svg {
+    width: 3rem;
+    height: 3rem;
+    color: #f56565;
+    --transform-translate-x: -50%;
+    --transform-translate-y: -1.25rem;
+    opacity: 1;
+  }
+
+  .savethisjob {
+    display: flex;
+  }
+
+  .saveThisJobImg {
+    width: 50%;
+    height: 36rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .details {
+    margin-top: 0;
+    max-width: 28rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .gameoflife {
+    display: flex;
+  }
+
+  .gameOfLifeImg {
+    width: 50%;
+    height: 36rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .nasapotd {
+    display: flex;
+  }
+
+  .nasapotdImg {
+    width: 50%;
+    height: 36rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .aboutDescription {
+    font-size: 1rem;
+  }
+
+  .heading-contact {
+    text-align: left;
+  }
+
+  .two-column {
+    flex-direction: row;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .image-column-contact {
+    margin-right: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 41.666667%;
+    height: auto;
+  }
+
+  .description-contact {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .text-column-contact {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 58.333333%;
+    margin-top: 0;
+    order: -9999;
+  }
+
+  .text-content-contact {
+    text-align: left;
+  }
+
+  .subHeading h5 {
+    text-align: left;
+  }
+
+  .heading-contact {
+    text-align: left;
+  }
+
+  .contact-form {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+  }  
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-btn {
+    visibility: visible;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+  }
+
+  .nav-links a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+  }
+
+  .nav-links.show {
+    visibility: visible;
+  }
+
+  .hero.show {
+    margin-top: 200px;
+    transition-duration: 0.8s;
+    transition-property: margin-top;
+  }
+
+  .hero.close {
+    transition-duration: 0.8s;
+  }
+
+  /* Adding a transition delay to the items in the navigation menu */
+  .nav-item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .nav-item:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+
+  .nav-item:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+
+  .footer-container-contact {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    max-width: 1024px;
+  }
+
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .row {
+    flex-direction: row;
+    padding-top: 4rem;
+  }
+
+  .text-column {
+    margin-right: 0;
+    max-width: 36rem;
+  }
+
+  .image-column {
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: 8rem;
+  }
+
+  .testimonial {
+    margin-right: 0;
+  }
+
+  .mission-statement {
+    font-size: 1rem;
+  }
+
+  .content-padding-xl {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .single-column {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .saveThisJobImg {
+    width: 41.666667%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .details {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .gameOfLifeImg {
+    width: 41.666667%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .nasapotdImg {
+    width: 41.666667%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .content-padding-xl {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .aboutDescription {
+    font-size: 11.125;
+  }
+
+  .heading-contact {
+    font: 3rem;
+  }
+
+  .description-contact {
+    font-size: 1.125;
+  }
+
+  .text-column-contact {
+    margin-right: 4rem;
+  }
+
+  .text-content-contact {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .heading-contact {
+    font-size: 3rem;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  header {
+    max-width: 1280px;
+  }
+
+  .text-column {
+    max-width: 42rem;
+    ;
+  }
+
+  .image-container {
+    --transform-translate-x: -6rem;
+    --transform-translate-y: -4rem;
+  }
+
+  .offsetbackground {
+    margin-bottom: -2rem;
+  }
+
+  .saveThisJobImg {
+    width: 33.333333%;
+  }
+}
