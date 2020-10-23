@@ -202,11 +202,15 @@ img {
 
 .page-title {
   float: left;
-  font-weight: 300;
+  font-weight: 500;
   border-bottom-width: 0;
-  font-size: 1rem !important;
+  font-size: 1.2rem !important;
   color: inherit;
   text-decoration: inherit;
+}
+
+.page-title span {
+  color: #4F9EF3;
 }
 
 .my-picture {
@@ -394,7 +398,7 @@ img {
 }
 
 .saveThisJobImg {
-  background-image: url('/images/savethisjob2.png');
+  background-image: url('/images/savethisjob-mac3.png');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
@@ -468,7 +472,7 @@ img {
 }
 
 .gameOfLifeImg {
-  background-image: url('images/gameoflife.png');
+  background-image: url('images/gameoflife_macbookpro15_front.png');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
@@ -486,7 +490,7 @@ img {
 }
 
 .nasapotdImg {
-  background-image: url('images/nasapotd.png');
+  background-image: url('images/nasaphotooftheday_macbookpro15_front.png');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
