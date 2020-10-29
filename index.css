@@ -501,6 +501,18 @@ img {
   margin-right: 1rem;
 }
 
+.weatherAppImg {
+  background-image: url('images/weatherApp_macbookpro15_front.png');
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+  height: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .content-padding-xl {
   max-width: 1280px;
   margin-left: auto;
@@ -831,6 +843,11 @@ img {
     margin-right: 2rem;
   }
 
+  .weatherAppImg {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .footer-links-container {
     flex-direction: row;
   }
@@ -898,6 +915,13 @@ img {
   }
 
   .nasapotdImg {
+    width: 50%;
+    height: 36rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .weatherAppImg {
     width: 50%;
     height: 36rem;
     margin-left: 1rem;
@@ -1076,6 +1100,12 @@ img {
     margin-right: 2rem;
   }
 
+  .weatherAppImg {
+    width: 41.666667%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .content-padding-xl {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -1125,9 +1155,5 @@ img {
 
   .offsetbackground {
     margin-bottom: -2rem;
-  }
-
-  .saveThisJobImg {
-    width: 33.333333%;
   }
 }
