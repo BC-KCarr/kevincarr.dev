@@ -472,7 +472,7 @@ img {
 }
 
 .gameOfLifeImg {
-  background-image: url('images/gameoflife_macbookpro15_front.png');
+  background-image: url('/images/gameoflife_macbookpro15_front.png');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
@@ -490,7 +490,7 @@ img {
 }
 
 .nasapotdImg {
-  background-image: url('images/nasaphotooftheday_macbookpro15_front.png');
+  background-image: url('/images/nasaphotooftheday_macbookpro15_front.png');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
@@ -502,7 +502,7 @@ img {
 }
 
 .weatherAppImg {
-  background-image: url('images/weatherApp_macbookpro15_front.png');
+  background-image: url('/images/weatherApp_macbookpro15_front.png');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
@@ -682,7 +682,7 @@ img {
 }
 
 .bg-image {
-  background-image: url("images/email-illustration.svg");
+  background-image: url("/images/email-illustration.svg");
   border-radius: 0.25rem;
   background-size: contain;
   background-repeat: no-repeat;
