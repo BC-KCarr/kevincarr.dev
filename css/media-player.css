@@ -1,4 +1,440 @@
 .video-section {
   display: flex;
-  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.media-player {
+  display: flex;
+  flex-direction: row;
+  padding: 1em 1em 5%;
+  background-color: #1a202c;
+  width: 75%;
+  max-width: 1000px;
+  padding-top: 3%;
+}
+
+.player-controls {
+  width: 80%;
+  flex-direction: column;
+
+}
+
+.media-controls {
+  display: flex;
+  width: 94%;
+  flex-direction: column;
+}
+
+.progress {
+  display: flex;
+  flex: 10;
+  flex-basis: 100%;
+  height: 20px;
+  transition: height 0.3s;
+  background: #4a5568;
+  cursor: ew-resize;
+}
+
+.progress .progress__filled {
+  width: 0%;
+  background: #0369D7;
+  flex: 0;
+  flex-basis: 0%;
+  height: 20px;
+}
+
+.pause {
+  background-position: -19px 0;
+}
+
+.stop {
+  background-position: -38px 0;
+}
+
+.volume-plus {
+  background-position: -57px 0;
+}
+
+.volume-minus {
+  background-position: -76px 0;
+}
+
+.mute {
+  background-position: -95px 0;
+}
+
+.unmute {
+  background-position: -114px 0;
+}
+
+.replay {
+  background-position: -133px 0;
+}
+
+.chapters {
+  font-size: 1.5em;
+}
+
+.chapters li:hover {
+  background-color: #0369D7;
+  color: #ffffff;
+}
+
+figure {
+  font-size: 0;
+  position: relative;
+  background: #ffffff;
+}
+
+figure .player-controls .media-video {
+  border: 1px solid #1a202c;
+  background: #1a202c;
+  width: 94%;
+  justify-content: left;
+}
+
+figure video {
+  width: 75%;
+  height: auto;
+  display: inline-block;
+}
+
+figure figcaption {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #222;
+  margin: 0;
+  width: 25%;
+  font-size: .8rem;
+  color: #666;
+  height: 100%;
+  overflow-y: scroll;
+  -moz-scrollbars-vertical;
+}
+
+figure figcaption ol {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure figcaption ol li {
+  padding: .7rem 1rem;
+  border-bottom: 1px dashed #ffffff;
+  transition: .3s;
+}
+
+figure {
+  font-size: 0;
+  position: relative;
+  background: #1a202c;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+figure figcaption ol {
+  list-style-type: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+figure figcaption ol li a {
+  display: block;
+  padding: .7rem 1rem;
+  border-bottom: 1px dashed #1a202c;
+  font-size: 1rem;
+  transition: .3s;
+  color: #666;
+  text-align: left;
+  line-height: 1.2;
+}
+
+/* current chapter style */
+.current {
+  background: #4a5568;
+  color: #1a202c;
+}
+
+
+/* NOT-current chapter style */
+
+figure figcaption ol li a:not(.current):hover,
+figure figcaption ol li a:not(.current):focus {
+  background: #4a5568;
+  color: #1a202c;
+  cursor: pointer;
+}
+
+figure figcaption::-webkit-scrollbar {
+  width: 13px;
+  height: 100%;
+}
+
+figure figcaption::-webkit-scrollbar-track {
+  background-color: #1a202c;
+}
+
+figure figcaption::-webkit-scrollbar-thumb:vertical {
+  background: white;
+  width: 20px;
+  height: 20px;
+}
+
+/* media buttons styles */
+figure .media-controls .media-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 95%;
+  justify-content: space-evenly;
+  padding-top: 3%;
+
+}
+
+figure .media-buttons .icon {
+  border: none;
+  cursor: pointer;
+  display: flex !important;
+  visibility: visible;
+  z-index: 99999;
+}
+
+figure .media-buttons .icon img {
+  max-width: 30px;
+  max-height: 30px;
+  background-color: transparent;
+}
+
+/* slider styles */
+
+input[type=range] {
+  height: 20px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  animate: 0.2s;
+  /* box-shadow: 1px 1px 1px #4a5568; */
+  background: #4a5568;
+  border-radius: 1px;
+  border: 0px solid #4a5568;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  /* box-shadow: 1px 1px 1px #000031; */
+  border: 1px solid #4a5568;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: #0369D7;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -2px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #4a5568;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  animate: 0.2s;
+  /* box-shadow: 1px 1px 1px #4a5568; */
+  background: #4a5568;
+  border-radius: 1px;
+  border: 0px solid #4a5568;
+}
+
+input[type=range]::-moz-range-thumb {
+  /* box-shadow: 1px 1px 1px #000031; */
+  border: 1px solid #4a5568;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: #0369D7;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #4a5568;
+  border: 0px solid #4a5568;
+  border-radius: 2px;
+  /* box-shadow: 1px 1px 1px #4a5568; */
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #4a5568;
+  border: 0px solid #4a5568;
+  border-radius: 2px;
+  /* box-shadow: 1px 1px 1px #4a5568; */
+}
+
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  /* box-shadow: 1px 1px 1px #000031; */
+  border: 1px solid #4a5568;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: #0369D7;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #4a5568;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #4a5568;
+}
+
+
+.share-modal {
+  display: none;
+  /* Hidden by default */
+  z-index: 99999;
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  margin-top: 50%;
+}
+
+.share-modal-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: right;
+  bottom: 0;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  color: white;
+  padding: 5%;
+}
+
+.share-modal-body {
+  padding: 2px 16px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: right;
+  color: white;
+  font-size: 5em;
+  max-height: 200px;
+}
+
+.share-modal-content {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: right;
+  bottom: 0;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+.share-modal-body img {
+  max-height: 200px;
+}
+
+/* The Close Button */
+.share-close {
+  background-color: #1a202c;
+  color: #ffffff;
+  font-size: 75px;
+  font-weight: bold;
+  padding-left: 5%;
+  text-align: right;
+  height: 100px;
+  max-width: 90%;
+  padding-bottom: 3%;
+  margin-bottom: -2%;
+  margin-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+.share-close:hover,
+.share-close:focus {
+  color: #0369D7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
 }
