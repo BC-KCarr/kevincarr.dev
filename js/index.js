@@ -1,3 +1,4 @@
+// menu toggle functionality on mobile
 const toggle = document.querySelector('.menu-btn')
 const nav = document.querySelector('.nav-links')
 const navItems = document.querySelectorAll('.nav-items')
@@ -28,3 +29,13 @@ function toggleMenu() {
   }
 
 }
+
+
+var shareModal = document.getElementById("share-modal");
+var shareButton = document.getElementById("share-button");
+var shareSpan = document.getElementsByClassName("share-close")[0];
+
+shareButton.onclick = () => {shareModal.style.display = "flex";}
+shareSpan.onclick = () => {shareModal.style.display = "none";}
+
+window.onclick = (event) => {if (event.target == shareModal) {shareModal.style.display = "none";}}

@@ -3,7 +3,7 @@
 
 <head>
   <title>Kevin Carr</title>
-  <link rel="shortcut icon" type="image/jpg" href="images/Mypicture.jpg"/>
+  <link rel="shortcut icon" type="image/jpg" href="images/Mypicture.jpg" />
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/media-player.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -52,7 +52,8 @@
                 Kevin Carr
               </h2>
               <p class="mission-statement">
-                I'm a <strong>Full Stack Web Developer</strong> who recently began to be fascinated by web programming. Have a look at
+                I'm a <strong>Full Stack Web Developer</strong> who recently began to be fascinated by web programming.
+                Have a look at
                 some
                 of
                 my most recent projects below.
@@ -117,39 +118,106 @@
                 <div class="subtitle">
                   February 2020 - May 2020<br />
                   React | Redux | Node | Postgres<br />
-                  Full Stack<br/>
+                  Full Stack<br />
                 </div>
                 <h4 class="project-title">
-                  <a href="https://chrome.google.com/webstore/detail/save-this-job/hejmehomfdabmjbhlpajmhcjaoichkgl" target="_blank" class="project-title">Save This Job</a>
+                  <a href="https://chrome.google.com/webstore/detail/save-this-job/hejmehomfdabmjbhlpajmhcjaoichkgl"
+                    target="_blank" class="project-title">Save This Job</a>
                 </h4>
                 <p class="description">
                   Published chrome extension that collects, tracks and manages your job applications from across the
                   web.
                 </p>
                 <ul class="contributions">
-                  <li>Solely responsible for 100% development of chrome plugin that injects a user form onto any website on the web to save job related information</li>
+                  <li>Solely responsible for 100% development of chrome plugin that injects a user form onto any website
+                    on the web to save job related information</li>
                   <li>
-                    Implemented Kanban style board (similar to Trello) for organization of saved jobs using React dnd (drag-and-drop) 
+                    Implemented Kanban style board (similar to Trello) for organization of saved jobs using React dnd
+                    (drag-and-drop)
                   </li>
                   <li>
-                    Created custom middleware for authenticating users with Okta using Node 
+                    Created custom middleware for authenticating users with Okta using Node
                   </li>
                   <li>
-                    Wrote unit tests with Jest for testing Redux actions/reducers  
+                    Wrote unit tests with Jest for testing Redux actions/reducers
                   </li>
                   <li>
-                    Presented app to Chief Business Officer of an online coding bootcamp which lead to a meeting with software engineering team to share ideas for similar product
+                    Presented app to Chief Business Officer of an online coding bootcamp which lead to a meeting with
+                    software engineering team to share ideas for similar product
                   </li>
                 </ul>
-                Github: <a href="https://github.com/Lambda-School-Labs/job-book-fe" class="git-hub-link" target="_blank">Front-End</a>
-                <a href="https://github.com/Lambda-School-Labs/job-book-be" class="git-hub-link" target="_blank">Back-End</a>
-                <a href="https://github.com/Lambda-School-Labs/job-book-chrome-ext" class="git-hub-link" target="_blank">Plugin</a>
-                <a href="https://chrome.google.com/webstore/detail/save-this-job/hejmehomfdabmjbhlpajmhcjaoichkgl" class="git-hub-link" target="_blank">Chrome Web Store</a>
+                Github: <a href="https://github.com/Lambda-School-Labs/job-book-fe" class="git-hub-link"
+                  target="_blank">Front-End</a>
+                <a href="https://github.com/Lambda-School-Labs/job-book-be" class="git-hub-link"
+                  target="_blank">Back-End</a>
+                <a href="https://github.com/Lambda-School-Labs/job-book-chrome-ext" class="git-hub-link"
+                  target="_blank">Plugin</a>
+                <a href="https://chrome.google.com/webstore/detail/save-this-job/hejmehomfdabmjbhlpajmhcjaoichkgl"
+                  class="git-hub-link" target="_blank">Chrome Web Store</a>
               </div>
             </div>
             <section class="video-section">
               <h2 id="video-player-title" class="video-player-title">Video Player HTML Skeleton</h2>
               <br />
+              <figure id='media-player' class="media-player">
+                <div id="player-controls" class="player-controls">
+                  <video id='media-video' controls preload="auto" class="media-video">
+                    <source src='images/save-this-job-demo.mp4' type='video/mp4'>
+                    <track kind="chapters" label="Projects" src="img/chapters.vtt" srclang="en"
+                      onload="displayChapters(this)" default />
+                    <track kind="subtitles" srclang="en" src="img/captions.vtt" label="English" default>
+                  </video>
+
+                  <div id='media-controls' class="media-controls">
+                    <div class="progress">
+                      <div class="progress__filled"></div>
+                    </div>
+                    <input id="playbackSpeed" type="range" name="playbackRate" class="player__slider" min="0.5" max="2"
+                      step="0.1" value="1">
+                    <div id="media-buttons" class="media-buttons">
+                      <div id='replay-button' class='replay icon' title='replay' onclick='replayMedia();'>
+                        <img src="img/png/replay.png" alt="replay" />
+                      </div>
+                      <div id='play-pause-button' class='play icon' title='play' onclick='togglePlayPause();'>
+                        <img id='play-img' src="img/png/play.png" alt="play/pause" />
+                      </div>
+                      <div id='stop-button' class='stop icon' title='stop' onclick='stopPlayer();'>
+                        <img src="img/png/stop.png" alt="stop" />
+                      </div>
+                      <div id='volume-inc-button' class='volume-plus icon' title='increase volume'
+                        onclick='changeVolume("up");'>
+                        <img src="img/png/plus.png" alt="volume up" />
+                      </div>
+                      <div id='volume-dec-button' class='volume-minus icon' title='decrease volume'
+                        onclick='changeVolume("down");'>
+                        <img src="img/png/minus.png" alt="volume down" />
+                      </div>
+                      <div id='mute-button' class='mute icon' title='mute' onclick='toggleMute("true");'>
+                        <img id='mute-img' src="img/png/mute.png" alt="mute/unmute" />
+                      </div>
+                      <div id='share-button' class='icon' title='share on social media'>
+                        <img id='share-img' src="img/png/share.png" alt="share on social media" />
+                      </div>
+                      <div id='cc-button' class='icon' title='closed captioning'>
+                        <img id='cc-img' src="img/png/cc.png" alt="toggle closed captioning" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id='media-chapters'>
+                  <figcaption>
+                    <ol id="chapters" class="chapters">
+                    </ol>
+                  </figcaption>
+                </div>
+                <div id="share-modal" class="share-modal">
+                  <div class="share-modal-content">
+                    <div class="share-close">X</div>
+                    <div class="share-modal-body">
+                    </div>
+                  </div>
+                </div>
+              </figure>
             </section>
             <div class="gameoflife">
               <div class="gameOfLifeImg"></div>
@@ -158,7 +226,8 @@
                   June 2020 | React | Front-End
                 </div>
                 <h4 class="project-title">
-                  <a href="https://priceless-mccarthy-5a1c05.netlify.app/" target="_blank" class="project-title">John Conway's Game Of Life</a>
+                  <a href="https://priceless-mccarthy-5a1c05.netlify.app/" target="_blank" class="project-title">John
+                    Conway's Game Of Life</a>
                 </h4>
                 <p class="description">
                   The Game of Life, also known simply as Life, is a cellular automaton devised by the British
@@ -172,14 +241,16 @@
                     Allow users to change the dimension of the grid being displayed using React state
                   </li>
                   <li>
-                    Built an option that creates a random cell configuration that users can run 
+                    Built an option that creates a random cell configuration that users can run
                   </li>
                   <li>
                     Produced a few sample cell configurations that users can load and run
                   </li>
                 </ul>
-                Github: <a href="https://github.com/kevcarr11/react-gameoflife/" class="git-hub-link" target="_blank">Code</a>
-                <a href="https://priceless-mccarthy-5a1c05.netlify.app" class="git-hub-link" target="_blank">Live Demo</a>
+                Github: <a href="https://github.com/kevcarr11/react-gameoflife/" class="git-hub-link"
+                  target="_blank">Code</a>
+                <a href="https://priceless-mccarthy-5a1c05.netlify.app" class="git-hub-link" target="_blank">Live
+                  Demo</a>
               </div>
             </div>
 
@@ -190,7 +261,8 @@
                   June 2020 | React | Front-End
                 </div>
                 <h4 class="project-title">
-                  <a href="https://priceless-mccarthy-5a1c05.netlify.app/" target="_blank" class="project-title">Nasa Photo Of The Day</a>
+                  <a href="https://priceless-mccarthy-5a1c05.netlify.app/" target="_blank" class="project-title">Nasa
+                    Photo Of The Day</a>
                 </h4>
                 <p class="description">
                   Built a website that consumes the NASA API to fetch the Astronomy Photo of the Day dating back to
@@ -205,10 +277,12 @@
                     Used an effect hook to handle the API call side effect
                   </li>
                   <li>
-                    Added a date dropdown that allows you to select a different date and see that nasa photo of the day or a video dependent on api response 
+                    Added a date dropdown that allows you to select a different date and see that nasa photo of the day
+                    or a video dependent on api response
                   </li>
                 </ul>
-                Github: <a href="https://github.com/kevcarr11/nasa-photo-of-the-day" class="git-hub-link" target="_blank">Code</a>
+                Github: <a href="https://github.com/kevcarr11/nasa-photo-of-the-day" class="git-hub-link"
+                  target="_blank">Code</a>
                 <a href="https://nasa-apod-project.netlify.app" class="git-hub-link" target="_blank">Live Demo</a>
               </div>
             </div>
@@ -219,13 +293,15 @@
                 <div class="subtitle">
                   February 2020<br />
                   React | MobX | React-Bootstrap<br />
-                  Front-End<br/>
+                  Front-End<br />
                 </div>
                 <h4 class="project-title">
-                  <a href="https://github.com/kevcarr11/weather-app-chrome-extenstion" target="_blank" class="project-title">Weather App</a>
+                  <a href="https://github.com/kevcarr11/weather-app-chrome-extenstion" target="_blank"
+                    class="project-title">Weather App</a>
                 </h4>
                 <p class="description">
-                  Simple Chrome plugin that gives easy access to the current weather and 5 day forecast based on a given location using the open weather map API.
+                  Simple Chrome plugin that gives easy access to the current weather and 5 day forecast based on a given
+                  location using the open weather map API.
                 </p>
                 <ul class="contributions">
                   <li>
@@ -235,10 +311,11 @@
                     Implemented React Router to route between the current weather and the 5 day forecast
                   </li>
                   <li>
-                    Simplified state management using MobX   
+                    Simplified state management using MobX
                   </li>
                 </ul>
-                Github: <a href="https://github.com/kevcarr11/weather-app-chrome-extenstion" class="git-hub-link" target="_blank">Code</a>
+                Github: <a href="https://github.com/kevcarr11/weather-app-chrome-extenstion" class="git-hub-link"
+                  target="_blank">Code</a>
               </div>
             </div>
 
@@ -250,7 +327,7 @@
         <!-- <svg></svg> -->
       </div>
   </div>
-  
+
   <section class="footer-container">
     <div class="footer-content">
       <div class="footer-row">
@@ -267,7 +344,7 @@
           <a class="social-link-icon" href="https://www.linkedin.com/in/kevin-carr-/">
             <svg viewBox="0 0 24 24">
               <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77
-                0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill="currentColor"/>
+                0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill="currentColor" />
             </svg>
           </a>
           <a class="social-link-icon" href="https://github.com/kevcarr11">
@@ -278,17 +355,18 @@
                 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0
                 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337
                 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0
-                22 12c0-5.525-4.475-10-10-10z" fill="currentColor"/>
+                22 12c0-5.525-4.475-10-10-10z" fill="currentColor" />
             </svg>
           </a>
         </div>
-        <p class="contact-info"><i class="far fa-envelope"></i>  kevincarr632@gmail.com</p>
+        <p class="contact-info"><i class="far fa-envelope"></i> kevincarr632@gmail.com</p>
       </div>
     </div>
   </section>
   </section>
 
   </div>
+  <script src="/js/media-player.js"></script>
   <script src="/js/index.js"></script>
 </body>
 
