@@ -12,6 +12,8 @@ html {
   margin: 0;
   line-height: 1.5;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  
 }
 
 body {
@@ -23,7 +25,7 @@ body {
   font-family: Inter, system-ui;
   color: #243E63;
   padding: 2rem;
-  overflow: hidden;
+  overflow-x: hidden;
   min-height: 100vh;
 }
 
