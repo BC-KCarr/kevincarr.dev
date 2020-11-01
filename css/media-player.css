@@ -9,10 +9,8 @@
 .media-player {
   display: flex;
   flex-direction: row;
-  padding: 1em 1em 5%;
   background-color: #e2e8f0;
   width: 85%;
-  max-width: 1200px;
 }
 
 .player-controls {
@@ -410,5 +408,17 @@ input[type=range]:focus::-ms-fill-upper {
 
   to {
     opacity: 1
+  }
+}
+
+@media (max-width: 868px) {
+  figure figcaption {
+    display: none;
+  }
+
+  .media-player {
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
   }
 }
