@@ -6,6 +6,15 @@
   align-items: center;
 }
 
+.video-player-title {
+  text-align: center;
+}
+
+.video-player-subtitle {
+  text-align: center;
+  width: 60%
+}
+
 .media-player {
   display: flex;
   flex-direction: row;
@@ -414,11 +423,16 @@ input[type=range]:focus::-ms-fill-upper {
 @media (max-width: 868px) {
   figure figcaption {
     display: none;
+    width: 100%
   }
 
   .media-player {
     width: 100%;
     justify-content: center;
     background-color: transparent;
+  }
+
+  .video-player-subtitle {
+    width: 100%
   }
 }
