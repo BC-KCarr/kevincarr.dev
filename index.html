@@ -2,12 +2,6 @@
 <html lang="en">
 
 <head>
-  <title>Kevin Carr</title>
-  <link rel="shortcut icon" type="image/jpg" href="images/Mypicture.jpg" />
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link rel="stylesheet" type="text/css" href="css/media-player.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="https://kit.fontawesome.com/1c3afd8776.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,6 +9,12 @@
   <meta property='og:image' content='/images/Mypicture.jpg' />
   <meta property='og:description' content='A Collection of some of the projects I have worked on' />
   <meta property='og:url' content='https://www.kevincarr.dev' />
+  <title>Kevin Carr</title>
+  <link rel="shortcut icon" type="image/jpg" href="images/Mypicture.jpg" />
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/media-player.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/1c3afd8776.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -129,10 +129,14 @@
                   web.
                 </p>
                 <ul class="contributions">
-                  <li>Solely responsible for 100% development of chrome plugin that injects a user form onto any website
-                    on the web to save job related information</li>
+                  <li>Lead developer of chrome plugin that injects user form onto any website
+                    on the web to save job related information
+                  </li>
                   <li>
-                    Implemented Kanban style board (similar to Trello) for organization of saved jobs using React dnd
+                    Solely responsible for 100% development of all chrome extension features including the drag functionality of the user form, and sending saved job information to back-end
+                  </li>
+                  <li>
+                    Configured Kanban style board (similar to Trello) for organization of saved jobs using React dnd
                     (drag-and-drop)
                   </li>
                   <li>
@@ -162,7 +166,7 @@
               <br />
               <figure id='media-player' class="media-player">
                 <div id="player-controls" class="player-controls">
-                  <video id='media-video' controls preload="auto" class="media-video">
+                  <video id='media-video' controls preload="auto" class="media-video" poster="/images/png/play-arrow.png">
                     <source src='images/save-this-job-demo.mp4' type='video/mp4'>
                     <track kind="chapters" label="Projects" src="images/chapters.vtt" srclang="en"
                       onload="displayChapters(this)" default />
@@ -174,16 +178,13 @@
                       <div class="progress__filled"></div>
                     </div>
                     <input id="playbackSpeed" type="range" name="playbackRate" class="player__slider" min="0.5" max="2"
-                      step="0.1" value="1">
+                      step="0.1" value="1"> 
                     <div id="media-buttons" class="media-buttons">
                       <div id='replay-button' class='replay icon' title='replay' onclick='replayMedia();'>
-                        <img src="images/png/replay.png" alt="replay" />
+                        <img src="images/png/repeat.png" alt="replay" />
                       </div>
                       <div id='play-pause-button' class='play icon' title='play' onclick='togglePlayPause();'>
-                        <img id='play-img' src="images/png/play.png" alt="play/pause" />
-                      </div>
-                      <div id='stop-button' class='stop icon' title='stop' onclick='stopPlayer();'>
-                        <img src="images/png/stop.png" alt="stop" />
+                        <img id='play-img' src="images/png/play512.png" alt="play/pause" />
                       </div>
                       <div id='volume-inc-button' class='volume-plus icon' title='increase volume'
                         onclick='changeVolume("up");'>
@@ -196,12 +197,7 @@
                       <div id='mute-button' class='mute icon' title='mute' onclick='toggleMute("true");'>
                         <img id='mute-img' src="images/png/mute.png" alt="mute/unmute" />
                       </div>
-                      <div id='share-button' class='icon' title='share on social media'>
-                        <img id='share-img' src="images/png/share.png" alt="share on social media" />
-                      </div>
-                      <div id='cc-button' class='icon' title='closed captioning'>
-                        <img id='cc-img' src="images/png/cc.png" alt="toggle closed captioning" />
-                      </div>
+                      
                     </div>
                   </div>
                 </div>

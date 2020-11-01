@@ -772,7 +772,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   font-weight: 500;
-  transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-duration: 300ms;
   height: 6rem;
 }
@@ -786,7 +786,7 @@ img {
   border-radius: 0.25rem;
   background-color: #4F9EF3;
   color: #f7fafc;
-  transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-duration: 300ms;
   display: inline-block;
   margin-top: 2rem;
@@ -982,7 +982,7 @@ img {
     margin-bottom: 2rem;
     margin-left: 0;
     margin-right: 0;
-  }  
+  }
 }
 
 @media only screen and (max-width: 768px) {

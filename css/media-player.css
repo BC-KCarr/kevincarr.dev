@@ -10,9 +10,9 @@
   display: flex;
   flex-direction: row;
   padding: 1em 1em 5%;
-  background-color: #1a202c;
-  width: 75%;
-  max-width: 1000px;
+  background-color: #e2e8f0;
+  width: 85%;
+  max-width: 1200px;
   padding-top: 3%;
 }
 
@@ -53,6 +53,7 @@
 .chapters li:hover {
   background-color: #4a5568;
   color: #ffffff;
+  cursor: pointer;
 }
 
 figure {
@@ -69,9 +70,11 @@ figure .player-controls .media-video {
 }
 
 figure video {
-  width: 75%;
+  width: 85%;
+  max-width: 1200px;
   height: auto;
   display: inline-block;
+  cursor: pointer;
 }
 
 figure figcaption {
@@ -140,8 +143,7 @@ figure figcaption ol li a {
 figure figcaption ol li a:not(.current):hover,
 figure figcaption ol li a:not(.current):focus {
   background: #4a5568;
-  color: #1a202c;
-  cursor: pointer;
+  color: #e2e8f0;
 }
 
 figure figcaption::-webkit-scrollbar {
@@ -179,10 +181,11 @@ figure .media-buttons .icon {
 }
 
 figure .media-buttons .icon img {
-  max-width: 30px;
-  max-height: 30px;
+  /* max-width: 45px; */
+  max-height: 25px;
   background-color: transparent;
 }
+
 
 /* slider styles */
 

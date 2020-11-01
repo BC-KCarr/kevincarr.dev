@@ -32,10 +32,6 @@ for (var i = 0; i < video.textTracks.length; i++) {
     }
 }
 
-// 
-subtitleButton.addEventListener('click', (e) => {
-    if (subtitles) {subtitles.mode = (subtitles.mode == 'showing' ? 'hidden' : 'showing');}
-});
 
 initializeMediaPlayer = () => {
   mediaPlayer = document.getElementById('media-video');
@@ -138,7 +134,7 @@ changeButtonType = (btn, value) => {
       }
       else if (btn.classList.contains('pause')){
           buttonImage = document.getElementById('play-img');
-          buttonImage.src = "images/png/play.png";
+          buttonImage.src = "/images/png/play512.png";
           btn.classList.add('play');
           btn.classList.remove('pause');
 
