@@ -395,6 +395,7 @@ img {
   margin-top: 6rem;
   -webkit-box-align: center;
   align-items: center;
+  flex-direction: row
 }
 
 .saveThisJobImg {
@@ -472,7 +473,7 @@ img {
 }
 
 .gameOfLifeImg {
-  background-image: url('images/gameoflife_macbookpro15_front.png');
+  background-image: url('/images/gameoflife_macbookpro15_front.png');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
@@ -490,7 +491,7 @@ img {
 }
 
 .nasapotdImg {
-  background-image: url('images/nasaphotooftheday_macbookpro15_front.png');
+  background-image: url('/images/nasaphotooftheday_macbookpro15_front.png');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
@@ -502,7 +503,7 @@ img {
 }
 
 .weatherAppImg {
-  background-image: url('images/weatherApp_macbookpro15_front.png');
+  background-image: url('/images/weatherApp_macbookpro15_front.png');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
@@ -682,7 +683,7 @@ img {
 }
 
 .bg-image {
-  background-image: url("images/email-illustration.svg");
+  background-image: url("/images/email-illustration.svg");
   border-radius: 0.25rem;
   background-size: contain;
   background-repeat: no-repeat;
@@ -771,7 +772,7 @@ img {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   font-weight: 500;
-  transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-duration: 300ms;
   height: 6rem;
 }
@@ -785,7 +786,7 @@ img {
   border-radius: 0.25rem;
   background-color: #4F9EF3;
   color: #f7fafc;
-  transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-duration: 300ms;
   display: inline-block;
   margin-top: 2rem;
@@ -981,7 +982,7 @@ img {
     margin-bottom: 2rem;
     margin-left: 0;
     margin-right: 0;
-  }  
+  }
 }
 
 @media only screen and (max-width: 768px) {
