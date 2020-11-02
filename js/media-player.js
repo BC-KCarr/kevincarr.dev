@@ -34,21 +34,8 @@ for (var i = 0; i < video.textTracks.length; i++) {
   }
 }
 
-const getResolution = () => {
-  if (screen.width < '500px') {
-  mediaPlayer.controls = true;
-  }
-}
-
-
-
 initializeMediaPlayer = () => {
   mediaPlayer = document.getElementById('media-video');
-
-  // mediaPlayer.controls = false;
-  if(screen.width > '500px') {
-    mediaPlayer.controls = false
-  }
 
   mediaPlayer.addEventListener('timeupdate', updateProgressBar, false);
 

@@ -78,7 +78,7 @@ figure .player-controls .media-video {
 figure video {
   width: 85%;
   max-width: 1200px;
-  height: auto;
+  height: 600px;
   display: inline-block;
   cursor: pointer;
 }
@@ -420,10 +420,14 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
-@media (max-width: 868px) {
+@media (max-width: 1068px) {
   figure figcaption {
     display: none;
     width: 100%
+  }
+
+  figure video {
+    height: 300px;
   }
 
   .media-player {
@@ -436,3 +440,4 @@ input[type=range]:focus::-ms-fill-upper {
     width: 100%
   }
 }
+
