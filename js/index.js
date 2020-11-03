@@ -49,3 +49,7 @@ function displaySlides(n) {
     }  
     slides[slide_index - 1].style.display = "block";  
   }
+
+setInterval(function(){
+  nextSlide(1)
+},6500);
