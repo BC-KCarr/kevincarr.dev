@@ -195,11 +195,6 @@ header i {
   transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
 }
 
-img {
-  display: block;
-  height: auto;
-  border-style: solid;
-}
 
 .page-title {
   float: left;
@@ -392,25 +387,6 @@ img {
   margin-top: 4rem;
 }
 
-.savethisjob {
-  margin-top: 2rem;
-  -webkit-box-align: center;
-  align-items: center;
-  flex-direction: row
-}
-
-.saveThisJobImg {
-  background-image: url('/images/savethisjob-mac3.png');
-  border-radius: 0.25rem;
-  flex-shrink: 0;
-  height: 20rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .details {
   margin-top: 1rem;
   margin-left: 1rem;
@@ -466,7 +442,7 @@ img {
   border-color: transparent;
 }
 
-.gameoflife {
+.img-right {
   margin-top: 6rem;
   -webkit-box-align: center;
   align-items: center;
@@ -485,7 +461,7 @@ img {
   margin-right: 1rem;
 }
 
-.nasapotd {
+.img-left {
   margin-top: 6rem;
   -webkit-box-align: center;
   align-items: center;
@@ -505,6 +481,18 @@ img {
 
 .weatherAppImg {
   background-image: url('/images/png/weatherApp_macbookpro15_front.png');
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+  height: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.particlesImg {
+  background-image: url('/images/particles.gif');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
@@ -850,6 +838,11 @@ img {
     margin-right: 2rem;
   }
 
+  .particlesImg {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .footer-links-container {
     flex-direction: row;
   }
@@ -883,17 +876,6 @@ img {
     opacity: 1;
   }
 
-  .savethisjob {
-    display: flex;
-  }
-
-  .saveThisJobImg {
-    width: 50%;
-    height: 36rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
   .details {
     margin-top: 0;
     max-width: 28rem;
@@ -901,7 +883,7 @@ img {
     margin-right: 1rem;
   }
 
-  .gameoflife {
+  .img-right {
     display: flex;
   }
 
@@ -912,7 +894,7 @@ img {
     margin-right: 1rem;
   }
 
-  .nasapotd {
+  .img-left {
     display: flex;
   }
 
@@ -924,6 +906,13 @@ img {
   }
 
   .weatherAppImg {
+    width: 50%;
+    height: 36rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .particlesImg {
     width: 50%;
     height: 36rem;
     margin-left: 1rem;
@@ -1079,31 +1068,31 @@ img {
     padding-bottom: 6rem;
   }
 
-  .saveThisJobImg {
-    width: 41.666667%;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
   .details {
     margin-left: 2rem;
     margin-right: 2rem;
   }
 
   .gameOfLifeImg {
-    width: 41.666667%;
+    width: 50%;
     margin-left: 2rem;
     margin-right: 2rem;
   }
 
   .nasapotdImg {
-    width: 41.666667%;
+    width: 50%;
     margin-left: 2rem;
     margin-right: 2rem;
   }
 
   .weatherAppImg {
-    width: 41.666667%;
+    width: 50%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .particlesImg {
+    width: 50%;
     margin-left: 2rem;
     margin-right: 2rem;
   }
