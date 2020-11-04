@@ -468,7 +468,7 @@ header i {
 }
 
 .nasapotdImg {
-  background-image: url('/images/png/nasaphotooftheday_macbookpro15_front.png');
+  background-image: url('/images/nasapotd.gif');
   border-radius: 0.25rem;
   flex-shrink: 0;
   height: 20rem;
