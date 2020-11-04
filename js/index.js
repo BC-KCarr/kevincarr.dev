@@ -52,4 +52,4 @@ function displaySlides(n) {
 
 setInterval(function(){
   nextSlide(1)
-},6500);
+},7500);

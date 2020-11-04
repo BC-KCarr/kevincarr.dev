@@ -450,7 +450,7 @@ header i {
 }
 
 .gameOfLifeImg {
-  background-image: url('/images/png/gameoflife_macbookpro15_front.png');
+  background-image: url('/images/gameoflife.gif');
   flex-shrink: 0;
   max-width: 1000px;
   height: 20rem;
