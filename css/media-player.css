@@ -71,14 +71,14 @@ figure {
 figure .player-controls .media-video {
   border: 1px solid #1a202c;
   background: #1a202c;
-  width: 94%;
+  width: 100%;
   justify-content: left;
 }
 
 figure video {
-  width: 85%;
+  width: 65%;
   max-width: 1200px;
-  height: 600px;
+  height: auto;
   display: inline-block;
   cursor: pointer;
 }
